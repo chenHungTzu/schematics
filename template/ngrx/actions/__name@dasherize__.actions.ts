@@ -1,6 +1,5 @@
 import { Action } from '@ngrx/store';
 
-
 export const EXAMPLE = '[<%= classify(name) %>] EXAMPLE';
 
 export class Example implements Action {
@@ -8,3 +7,5 @@ export class Example implements Action {
     constructor(public payload : any ) { }
 }
 
+
+export type Actions = Example;
