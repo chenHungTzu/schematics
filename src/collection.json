@@ -1,13 +1,8 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "ng-module": {
-      "description": "create ng module",
-      "factory": "./schema/ng-module/index#ngmodule",
-      "schema": "./schema/ng-module/schema.json"
-    },
     "ngrx": {
-      "description": "create ngrx store ",
+      "description": "create ngrx store",
       "factory": "./schema/ngrx/index#ngrx",
       "schema": "./schema/ngrx/schema.json"
     },

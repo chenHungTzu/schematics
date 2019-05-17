@@ -6,7 +6,18 @@
     "properties": {
       "name": {
         "type": "string",
-        "description": "The name for the new feature module."
+        "description": "The name for the new feature module.",
+        "x-prompt" : "請輸入主檔功能名稱 , ex : (member-auth)"
+      },
+      "url1":{
+        "type": "string",
+        "description" : "the url to get array",
+        "x-prompt" : "請輸入清單取得路徑  ex : (http://10.2.6.179/api/GetList)"
+      },
+      "url2":{
+        "type": "string",
+        "description" : "the url to get detail",
+        "x-prompt" : "請輸入明細取得路徑 ex : (http://10.2.6.179/api/Get)"
       },
       "dir": {
         "type": "string",
