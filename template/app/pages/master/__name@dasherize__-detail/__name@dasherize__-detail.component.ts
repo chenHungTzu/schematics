@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { <%=classify(name)%> } from 'src/app/<%=dasherize(name).toLowerCase()%>.model';
+import { <%=classify(name)%> } from 'src/app/model/<%=dasherize(name).toLowerCase()%>.model';
 
 import { State as from<%=classify(name)%>Reducers } from "../store/reducers/"
 import { Store } from '@ngrx/store';

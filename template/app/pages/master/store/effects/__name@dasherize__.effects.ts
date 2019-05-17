@@ -9,7 +9,7 @@ import { Store } from '@ngrx/store';
 import { of, concat } from 'rxjs';
 
 
-import { <%=classify(name)%> } from '../../model/<%=dasherize(name).toLowerCase()%>.model'
+import { <%=classify(name)%> } from 'src/app/model/<%=dasherize(name).toLowerCase()%>.model'
 
 // customer service
 import { HttpService } from 'src/app/shared/service/http.service';

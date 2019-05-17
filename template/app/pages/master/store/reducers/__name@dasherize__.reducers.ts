@@ -1,5 +1,5 @@
 import * as from<%=classify(name)%>Action from '../actions/<%= dasherize(name) %>.actions';
-import {<%=classify(name)%>} from '../../model/<%=dasherize(name).toLowerCase()%>.model';
+import {<%=classify(name)%>} from 'src/app/model/<%=dasherize(name).toLowerCase()%>.model';
 
 export interface State{
 	detail : <%=classify(name)%>

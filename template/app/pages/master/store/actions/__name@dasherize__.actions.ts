@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { <%=classify(name)%> } from '../../model/<%=dasherize(name).toLowerCase()%>.model'
+import { <%=classify(name)%> } from 'src/app/model/<%=dasherize(name).toLowerCase()%>.model'
 
 export const DETAIL_ENTRY = '[<%= classify(name).toUpperCase() %>] DETAIL ENTRY';
 export const LOAD_DETAIL = '[<%= classify(name).toUpperCase() %>] LOAD DETAIL';

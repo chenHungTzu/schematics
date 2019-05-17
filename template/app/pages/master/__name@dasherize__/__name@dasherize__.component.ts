@@ -3,7 +3,7 @@ import { PtcAjaxOptions, PtcServerTableRequest } from 'ptc-server-table';
 import { Store } from '@ngrx/store';
 import { State as from<%=classify(name)%>Reducers } from "../store/reducers/"
 import * as from<%=classify(name)%>Actions from "../store/actions/<%=dasherize(name) %>.actions"
-import { <%=classify(name)%> } from 'src/app/<%=dasherize(name).toLowerCase()%>.model';
+import { <%=classify(name)%> } from 'src/app/model/<%=dasherize(name).toLowerCase()%>.model';
 
 import { loggerClass, loggerAction } from 'src/app/shared/decorator/logger.decorator';
 import { AuthorizeToDirective, AuthorizeToFunc } from 'src/app/shared/decorator/authorize.decorator';
