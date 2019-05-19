@@ -24,7 +24,7 @@ function buildSelector(options : any) {
 }
 // You don't have to export the function as default. You can also have more than one rule factory
 // per file.
-export function master(options: any): Rule {
+export function ngrx(options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
     options.selector = options.selector || buildSelector(options);
     const sourceDir = options.dir;
@@ -33,7 +33,7 @@ export function master(options: any): Rule {
       throw new SchematicsException(`sourceDir option is required.`);
     }
 
-    const templateSource = apply(url('../../../master-template/'), [
+    const templateSource = apply(url('../../../ngrx-template/'), [
       template({
         ...stringUtils,
         ...options

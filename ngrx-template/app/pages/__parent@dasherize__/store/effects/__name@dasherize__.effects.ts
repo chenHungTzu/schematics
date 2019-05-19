@@ -39,7 +39,7 @@ export class <%=classify(name)%>Effects {
             exhaustMap((payload: string) => {
 
                 // 主要要做的事情 , 這邊是透過 http client 撈取資料
-                const retrieve$ = this.http.get<AspnetJsonResult<<%=classify(name) %>> ('<%=url2%>', {});
+                const retrieve$ = this.http.get<AspnetJsonResult<<%=classify(name)%>>> ('your url', {});
 
                 // 成功時將呼叫 loadDetailSuccess$ 進行後續行為
                 const handleSuccess = (result: AspnetJsonResult<<%=classify(name) %>>) =>

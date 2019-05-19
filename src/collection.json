@@ -2,9 +2,14 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "master": {
-      "description": "create ngrx store",
+      "description": "create master and ngrx store",
       "factory": "./schema/master/index#master",
       "schema": "./schema/master/schema.json"
+    },
+    "ngrx": {
+      "description": "create ngrx store",
+      "factory": "./schema/ngrx/index#ngrx",
+      "schema": "./schema/ngrx/schema.json"
     },
     "class": {
       "aliases": ["cl"],
